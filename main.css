@@ -154,25 +154,26 @@ body {
     right: 15px;
 } */
 
-.feedback-form {
+.form {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 4px;
     margin-top: 20px;
 }
 
-.feedback-form h2 {
+.form h2 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.feedback-form label {
+.form label {
     display: block;
     margin-bottom: 10px;
 }
 
-.feedback-form input,
-.feedback-form textarea {
+.form input,
+.form textarea,
+.form select {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
@@ -181,11 +182,11 @@ body {
     box-sizing: border-box;
 }
 
-.feedback-form textarea {
+.form textarea {
     min-height: 50px;
 }
 
-.feedback-form .button {
+.button {
     background-color: #555555;
     color: #ffffff;
     border: none;
@@ -194,8 +195,12 @@ body {
     cursor: pointer;
 }
 
-.feedback-form .button:hover,
-.feedback-form .button:focus,
-.feedback-form .button:active {
+.button:hover,
+.button:focus,
+.button:active {
     background-color: #333333;
+}
+
+.addUser-container {
+    margin-top: 20px;
 }

@@ -155,7 +155,7 @@
 
       <div class="form-container">
         <h2>Обратная связь</h2>
-        <form action="submit.php" method="POST" class="feedback-form">
+        <form action="#" method="POST" class="form">
           <label>
             Имя:
             <input type="text" name="name" required />
@@ -173,6 +173,80 @@
 
           <button type="submit" class="button button_submit">Отправить</button>
         </form>
+      </div>
+
+      <div class="addUser-container">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#addUser" class="button">
+          Добавить пользователя
+        </button>
+      </div>
+
+      <div
+        class="modal fade"
+        id="addUser"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Добавление нового пользователя</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Закрыть"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#" method="POST" class="form" id="addUserForm">
+                <label>
+                  ФИО:
+                  <input type="text" name="full-name" required />
+                </label>
+
+                <label>
+                  Телефон:
+                  <input type="tel" name="phone" required />
+                </label>
+
+                <label>
+                  Почта:
+                  <input type="email" name="email" required />
+                </label>
+
+                <label>
+                  Логин:
+                  <input type="text" name="login" required />
+                </label>
+
+                <label>
+                  Пароль:
+                  <input type="password" name="password" required />
+                </label>
+
+                <label>
+                  Группа пользователя:
+                  <select name="userGroup" required>
+                    <option value="">Выберите группу</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Закрыть
+              </button>
+              <button type="submit" class="btn btn-primary" form="addUserForm">Создать</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer class="footer">&copy; 2023 Maxima School. Все права защищены.</footer>
